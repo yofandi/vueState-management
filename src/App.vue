@@ -1,9 +1,12 @@
 <script setup>
+import { ref } from "vue";
 import Parent from "@/components/Parent.vue";
+
+const number = ref([1, 2, 3, 4, 5, 6]);
 </script>
 <template>
   <main>
-    <Parent></Parent>
+    <Parent :numbers="number"></Parent>
   </main>
 </template>
 

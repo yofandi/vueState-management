@@ -1,9 +1,11 @@
-<script setup></script>
+<script setup>
+const { number } = defineProps(["numbers"]);
+</script>
 
 <template>
   <div>
     <h1>Great Grand Child</h1>
-    <div class="line"></div>
+    {{ numbers }}
   </div>
 </template>
 
