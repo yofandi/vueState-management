@@ -1,7 +1,10 @@
 <script setup>
-import { inject } from "vue";
+// import { inject } from "vue";
 
-const numbers = inject("nummbers_share");
+// const numbers = inject("nummbers_share");
+
+import { useNumbers } from "@/stores/numbers";
+const { numbers } = useNumbers();
 </script>
 
 <template>

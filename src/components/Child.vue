@@ -1,8 +1,10 @@
 <script setup>
-import { inject } from "vue";
+// import { inject } from "vue";
 import GrandChild from "./GrandChild.vue";
+import { useNumbers } from "@/stores/numbers";
 
-const numbers = inject("nummbers_share");
+const { numbers } = useNumbers();
+// const numbers = inject("nummbers_share");
 </script>
 
 <template>
