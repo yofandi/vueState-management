@@ -1,12 +1,14 @@
 <script setup>
-import { ref } from "vue";
+import { provide, ref } from "vue";
 import Parent from "@/components/Parent.vue";
 
 const number = ref([1, 2, 3, 4, 5, 6]);
+
+provide("nummbers_share", number);
 </script>
 <template>
   <main>
-    <Parent :numbers="number"></Parent>
+    <Parent></Parent>
   </main>
 </template>
 

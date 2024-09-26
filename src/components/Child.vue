@@ -1,14 +1,16 @@
 <script setup>
+import { inject } from "vue";
 import GrandChild from "./GrandChild.vue";
 
-const { number } = defineProps(["numbers"]);
+const numbers = inject("nummbers_share");
 </script>
 
 <template>
   <div>
     <h1>Child</h1>
+    {{ numbers }}
     <div class="line"></div>
-    <GrandChild :numbers="numbers"></GrandChild>
+    <GrandChild></GrandChild>
   </div>
 </template>
 

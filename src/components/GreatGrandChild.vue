@@ -1,5 +1,7 @@
 <script setup>
-const { number } = defineProps(["numbers"]);
+import { inject } from "vue";
+
+const numbers = inject("nummbers_share");
 </script>
 
 <template>
