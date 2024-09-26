@@ -3,7 +3,7 @@
 import GrandChild from "./GrandChild.vue";
 import { useNumbers } from "@/stores/numbers";
 
-const { numbers } = useNumbers();
+const { numbers, addNumber } = useNumbers();
 // const numbers = inject("nummbers_share");
 </script>
 
@@ -11,6 +11,7 @@ const { numbers } = useNumbers();
   <div>
     <h1>Child</h1>
     {{ numbers }}
+    <button @click="addNumber">add</button>
     <div class="line"></div>
     <GrandChild></GrandChild>
   </div>

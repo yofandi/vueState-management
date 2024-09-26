@@ -4,13 +4,13 @@
 // const numbers = inject("nummbers_share");
 
 import { useNumbers } from "@/stores/numbers";
-const { numbers } = useNumbers();
+const { numbers, filterNumber } = useNumbers();
 </script>
 
 <template>
   <div>
     <h1>Great Grand Child</h1>
-    {{ numbers }}
+    {{ filterNumber(18) }}
   </div>
 </template>
 
